@@ -1,0 +1,39 @@
+{
+  "name": "turbos-finance-bot",
+  "version": "1.0.0",
+  "description": "Turbos Finance Bot",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "ts-node transactions/snipe.ts",
+    "snipe": "ts-node transactions/snipe.ts",
+    "monitor": "ts-node helpers/listedTokens.ts",
+    "sync": "ts-node helpers/syncTokens.ts",
+    "watch": "ts-node transactions/watch.ts",
+    "delete": "ts-node scripts/deleteToken.ts",
+    "rpc-check": "ts-node scripts/checkRPC.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@mysten/sui": "^1.14.2",
+    "axios": "^1.7.7",
+    "better-sqlite3": "^11.5.0",
+    "dotenv": "^16.3.1",
+    "node-telegram-bot-api": "^0.66.0",
+    "pino": "^8.19.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7",
+    "graphql-ws": "^5.14.3",
+    "ws": "^8.16.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/node": "^20.10.0",
+    "@types/node-telegram-bot-api": "^0.64.7",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2",
+    "viem": "^2.21.42",
+    "@types/ws": "^8.5.10"
+  }
+}
